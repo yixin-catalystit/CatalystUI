@@ -1,0 +1,26 @@
+{
+  "name": "CatalystUI",
+  "version": "0.0.0",
+  "description": "Framework for easy and fast front-end development",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JR33D/CatalystUI.git"
+  },
+  "author": "Catalyst IT Services",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://catalystit.atlassian.net/secure/RapidBoard.jspa?rapidView=162&view=planning.nodetail&selectedIssue=CIP-1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+	"grunt-contrib-concat": "",
+    "grunt-contrib-uglify": "",
+    "grunt-contrib-jshint": "",
+	"grunt-contrib-qunit": "",
+    "grunt-contrib-watch": ""
+  }
+}
