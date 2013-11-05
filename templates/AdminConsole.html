@@ -4,12 +4,22 @@
     <meta charset="utf-8">
     <title>Bootstrap Admin Console Template</title>
     <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.css" rel="stylesheet">
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="../css/bootstrap.css" rel="stylesheet">-->
+	<style type="text/css" rel="stylesheet">
+		body {
+			padding: 20px;
+		}	
+		.container {
+			max-width: 1303px !important;
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
+	</style>
   </head>
 
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
+    <div class="navbar navbar-inverse navbar-default" role="navigation">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
@@ -36,7 +46,7 @@
               </ul>
             </li>
           </ul>
-          <form class="navbar-form navbar-right">
+          <form class="nav navbar-form navbar-right">
             <div class="form-group">
               <input type="text" placeholder="Email" class="form-control">
             </div>
@@ -46,11 +56,88 @@
             <button type="submit" class="btn btn-success">Sign in</button>
           </form>
         </div><!--/.navbar-collapse -->
-      </div>
     </div>
+	<div class="container">
+		<div class="row">
+			<div id="sidebar" class="col-xs-6 col-sm-3" role="navigation">
+				<div class="list-group">
+					<a class="list-group-item active" href="#am">Account Managment</a>
+					<a class="list-group-item active" href="#sc">Site Controls</a>
+					<a class="list-group-item active" href="#ri">Reporting Info</a>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-9">
+				<div class="row">
+					<div id="am" class="col-6 col-sm-6 col-lg-6">
+						<h2>&nbsp;<span class="glyphicon glyphicon-user"></span>&nbsp;Account Manament</h2>
+						<p>Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+						<div class="row">
+							<div>
+								<div class="col-6 col-sm-6 col-lg-6">
+									<button type="button" class="btn btn-default btn-lg">Manage Permissions</button>
+								</div>
+								<div class="col-6 col-sm-6 col-lg-6">
+									<button type="button" class="btn btn-default btn-lg">Edit Users</button>
+								</div>
+								<div class="col-6 col-sm-6 col-lg-6">
+									<button type="button" class="btn btn-default btn-lg">Add Users</button>
+								</div>
+							</div>
+						</div>
+					</div><!--/section am-->
+					<div id="sc" class="col-6 col-sm-6 col-lg-6"> 
+						<h2>&nbsp;<span class="glyphicon glyphicon-wrench"></span>&nbsp;Site Controls</h2>
+						<p>Tortor mauris condimentum nibh, Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+						<div class="row">
+							<div class="col-6 col-sm-6 col-lg-6">
+								<button type="button" class="btn btn-default btn-lg">Post Global Alert</button>
+							</div>
+							<div class="col-6 col-sm-6 col-lg-6">
+								<button type="button" class="btn btn-default btn-lg">Add/Edit Page</button>
+							</div>
+							<div class="col-6 col-sm-6 col-lg-6">
+								<button type="button" class="btn btn-default btn-lg">Back Up/Restore</button>
+							</div>
+						</div>
+					</div><!--/section sc-->
+					<div id="ri" class="col-6 col-sm-6 col-lg-6">
+						<h2>&nbsp;<span class="glyphicon glyphicon-list-alt"></span>&nbsp;Reporting Infomation</h2>
+						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, donec sed odio dui. </p>
+						<div class="row">
+							<div class="col-6 col-sm-6 col-lg-6">
+								<button type="button" class="btn btn-default btn-lg">Analytics</button>
+							</div>
+							<div class="col-6 col-sm-6 col-lg-6">
+								<button type="button" class="btn btn-default btn-lg">Usage Statistics</button>
+							</div>
+							<div class="col-6 col-sm-6 col-lg-6">
+								<button type="button" class="btn btn-default btn-lg">View Statistics</button>
+							</div>
+						</div>
+					</div><!--/section ri-->
+				<!-- Template for adding addtional Sections. replace bracketed [Areas] with content.
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
+					<div id="[sectionid]" class="col-6 col-sm-6 col-lg-6">
+						<h2>&nbsp;<span class="glyphicon glyphicon-[glyphicon]"></span>&nbsp;[SectionName]</h2>
+						<p>[SectionDescription]</p>
+						<div class="row">
+							<div class="col-6 col-sm-6 col-lg-6">
+								<button type="button" class="btn btn-default btn-lg">[ButtonOne]</button>
+							</div>
+							<div class="col-6 col-sm-6 col-lg-6">
+								<button type="button" class="btn btn-default btn-lg">[ButtonTwo]</button>
+							</div>
+							<div class="col-6 col-sm-6 col-lg-6">
+								<button type="button" class="btn btn-default btn-lg">[ButtonThree]</button>
+							</div>
+						</div>
+					</div>
+				-->			
+				
+				</div>
+			</div>
+		</div>
+	</div>
     <!-- Placed at the end of the document so the pages load faster -->
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 		<script src="../js/bootstrap.js"></script>
