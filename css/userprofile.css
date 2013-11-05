@@ -1,0 +1,48 @@
+.usernav {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-weight: 100;
+  border-radius: 4px 4px 4px 4px;
+  color: inherit;
+  background-color: #eeeeee;
+}
+
+.infodisplay {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-weight: 100;
+  color: inherit;
+  border-color: black;
+  border-radius: 4px 4px 4px 4px;
+  border-width: 5px;
+  border-style: solid;
+}
+
+table td{
+  height: 25px;
+  font:12px normal 70% Tahoma, Sans Serif, Arial;
+}
+
+table td:nth-child(1){
+  color:#999999;
+}
+
+table td:nth-child(2){
+  padding-left: 80px;
+}
+
+.nav-tabs li a{
+  border-right-width: 0px;
+  margin-right:0px;
+}
+
+.nav-tabs li.active a, .nav-tabs li.active a:hover, .nav-tabs li.active a:focus{
+  border:0px;
+  border-radius: 4px 0px 0px 4px;
+}
