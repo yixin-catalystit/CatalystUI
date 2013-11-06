@@ -49,8 +49,52 @@
 		            <td id="phonepopout"></td>
 		          </tr>
               <tr><td><h4><b>Details</b></h4></td></tr>
+              <tr>
+                <td>First Name</td>
+                <td id="firstnamepopout"></td>
+              </tr>
+              <tr>
+                <td>Last Name</td>
+                <td id="lastnamepopout"></td>
+              </tr>
               <tr><td><h4><b>Organization</b></h4></td></tr>
+              <tr>
+                <td>Job title</td>
+                <td id="jobtitlepopout"></td>
+              </tr>
+              <tr>
+                <td>Department</td>
+                <td id="departmentpopout"></td>
+              </tr>
+              <tr>
+                <td>Company</td>
+                <td id="companypopout"></td>
+              </tr>
+              <tr>
+                <td>Management</td>
+                <td id="managementpopout"></td>
+              </tr>
               <tr><td><h4><b>Address</b></h4></td></tr>
+              <tr>
+                <td>Street</td>
+                <td id="streetpopout"></td>
+              </tr>
+              <tr>
+                <td>City</td>
+                <td id="citypopout"></td>
+              </tr>
+              <tr>
+                <td>State/Province</td>
+                <td id="statepopout"></td>
+              </tr>
+              <tr>
+                <td>Postal code</td>
+                <td id="postalcodepopout"></td>
+              </tr>
+              <tr>
+                <td>Country/Region</td>
+                <td id="countrypopout"></td>
+              </tr>
 		        </table>
 		      </div>
 		      <div class="modal-footer">
@@ -125,11 +169,11 @@
 								<table>
 									<tr>
 										<td>First Name</td>
-										<td>xxx</td>
+										<td id="firstname">xxx</td>
 									</tr>
 									<tr>
 										<td>Last Name</td>
-										<td>xxx</td>
+										<td id="lastname">xxx</td>
 									</tr>
 								</table>
 							</div>
@@ -143,19 +187,19 @@
 								<table>
 									<tr>
 										<td>Job title</td>
-										<td>Developer</td>
+										<td id="jobtitle">Developer</td>
 									</tr>
 									<tr>
 										<td>Department</td>
-										<td>Application Development</td>
+										<td id="department">Application Development</td>
 									</tr>
 									<tr>
 										<td>Company</td>
-										<td>Catalyst IT Services</td>
+										<td id="company">Catalyst IT Services</td>
 									</tr>
 									<tr>
 										<td>Management</td>
-										<td>xxx</td>
+										<td id="management">xxx</td>
 									</tr>
 								</table>
 							</div>
@@ -169,23 +213,23 @@
 								<table>
 									<tr>
 										<td>Street</td>
-										<td>502 South Sharp Street</td>
+										<td id="street">502 South Sharp Street</td>
 									</tr>
 									<tr>
 										<td>City</td>
-										<td>Baltomroe</td>
+										<td id="city">Baltomroe</td>
 									</tr>
 									<tr>
 										<td>State/Province</td>
-										<td>Maryland</td>
+										<td id="state">Maryland</td>
 									</tr>
 									<tr>
 										<td>Postal code</td>
-										<td>21201</td>
+										<td id="postalcode">21201</td>
 									</tr>
 									<tr>
 										<td>Country/Region</td>
-										<td>United States</td>
+										<td id="country">United States</td>
 									</tr>
 								</table>
 							</div>
@@ -196,8 +240,14 @@
 
 			<div class="col-lg-3 example-block">
 				<div class="panel panel-default">
-					<div class="panel-body">Favorite Items</div>
+					<div style="margin-top:10px;">&nbsp;&nbsp;&nbsp;Favorite Items</div>
+					<div class="panel-body">
+						<div>&nbsp;&nbsp;&nbsp;<a href=#>Home</a></div>
+						<div>&nbsp;&nbsp;&nbsp;<a href=#>User</a></div>
+						<div>&nbsp;&nbsp;&nbsp;<a href=#>Gallery</a></div>
+				  </div>
 				</div>
+				
 			</div>
 
 		</div>

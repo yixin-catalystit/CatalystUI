@@ -25,4 +25,15 @@ function filloutdata(){
   $('#emailpopout').text($('#email').text());
   $('#officepopout').text($('#office').text());
   $('#phonepopout').text($('#phone').text());
+  $('#firstnamepopout').text($('#firstname').text());
+  $('#lastnamepopout').text($('#lastname').text());
+  $('#jobtitlepopout').text($('#jobtitle').text());
+  $('#departmentpopout').text($('#department').text());
+  $('#companypopout').text($('#company').text());
+  $('#managementpopout').text($('#management').text());
+  $('#streetpopout').text($('#street').text());
+  $('#citypopout').text($('#city').text());
+  $('#statepopout').text($('#state').text());
+  $('#postalcodepopout').text($('#postalcode').text());
+  $('#countrypopout').text($('#country').text());
 }
