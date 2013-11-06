@@ -25,7 +25,7 @@
 }
 
 table td{
-  height: 25px;
+  height: 35px;
   font:12px normal 70% Tahoma, Sans Serif, Arial;
 }
 
@@ -46,3 +46,4 @@ table td:nth-child(2){
   border:0px;
   border-radius: 4px 0px 0px 4px;
 }
+

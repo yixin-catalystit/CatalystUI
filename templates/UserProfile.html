@@ -20,14 +20,52 @@
 				<hr />
 			</div>
 		</div>
-
+		
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        <h4 class="modal-title" id="myModalLabel">User profile</h4>
+		      </div>
+		      <div class="modal-body">
+		        <table>
+		          <tr><td><h4><b>Information</b></h4></td></tr>
+		          <tr>
+		            <td>Alias</td>
+		            <td id="aliaspopout">123</td>
+		          </tr>
+		          <tr>
+		            <td>Email</td>
+		            <td id="emailpopout"></td>
+		          </tr>
+		          <tr>
+		            <td>Office</td>
+		            <td id="officepopout"></td>
+		          </tr>
+		          <tr>
+		            <td>Phone</td>
+		            <td id="phonepopout"></td>
+		          </tr>
+              <tr><td><h4><b>Details</b></h4></td></tr>
+              <tr><td><h4><b>Organization</b></h4></td></tr>
+              <tr><td><h4><b>Address</b></h4></td></tr>
+		        </table>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		
 		<div class="row">
 			<div class="col-lg-3 example-block">
 				<div class="usernav">
 					<img src="../img/default.png" height="100" width="100" />
-
 					<div>
-						<small>User name</small>
+						<a style="cursor:pointer;" onclick="filloutdata()"><small data-toggle="modal" data-target="#myModal">User name</small></a>
 					</div>
 					<div>
 						<small>Developer, Application Development</small>
@@ -39,11 +77,10 @@
 					<ul class="nav nav-tabs nav-stacked" id="myTab"
 						style="padding-right: 0px;">
 						<li class="active"><a href="#information" data-toggle="tab">Information</a></li>
-						<li><a href="#details" data-toggle="tab">Details</a></li>
+						<li><a href="#details" data-toggle="tab" style="FONT-SIZE: small;">Details</a></li>
 						<li><a href="#organization" data-toggle="tab">Organization</a></li>
 						<li><a href="#address" data-toggle="tab">Address</a></li>
 					</ul>
-
 				</div>
 			</div>
 
@@ -54,32 +91,36 @@
 				<div id="myTabContent" class="tab-content">
 					<div class="tab-pane fade in active" id="information">
 						<div class="panel panel-default">
-							<div class="panel-body">
+							<div class="panel-body" >
+							  <p class="editbutton"><button type="button" style="float:right;" class="btn btn-primary btn-sm" onclick="editData()" >Edit</button></p>
 								<h4><b>Information</b></h4>
+								<form>
 								<table>
 									<tr>
-										<td>Alias</td>
-										<td>xx xxx</td>
+										<td >Alias</td>
+										<td id="alias">xx xxx</td>
 									</tr>
 									<tr>
 										<td>E-mail</td>
-										<td>xxx@catalystitserices.com</td>
+										<td id="email">xxx@catalystitserices.com</td>
 									</tr>
 									<tr>
 										<td>Office</td>
-										<td>Baltomore</td>
+										<td id="office">Baltomore</td>
 									</tr>
 									<tr>
 										<td>Phone</td>
-										<td>410-385-2500</td>
+										<td id="phone">410-385-2500</td>
 									</tr>
 								</table>
+								</form>
 							</div>
 						</div>
 					</div>
 					<div class="tab-pane fade" id="details">
 						<div class="panel panel-default">
 							<div class="panel-body">
+							  <button type="button" style="float:right;" class="btn btn-primary btn-sm" >Edit</button>
 								<h4><b>Details</b></h4>
 								<table>
 									<tr>
@@ -97,6 +138,7 @@
 					<div class="tab-pane fade" id="organization">
 						<div class="panel panel-default">
 							<div class="panel-body">
+							  <button type="button" style="float:right;" class="btn btn-primary btn-sm" >Edit</button>
 								<h4><b>Organization</b></h4>
 								<table>
 									<tr>
@@ -122,6 +164,7 @@
 					<div class="tab-pane fade" id="address">
 						<div class="panel panel-default">
 							<div class="panel-body">
+							  <button type="button" style="float:right;" class="btn btn-primary btn-sm" >Edit</button>
 								<h4><b>Address</b></h4>
 								<table>
 									<tr>
