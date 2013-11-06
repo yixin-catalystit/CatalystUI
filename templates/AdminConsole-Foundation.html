@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Admin Console Foundation Template</title>
+		<link rel="stylesheet" href="../css/normalize.css">
+		<link rel="stylesheet" href="../css/foundation.css">
+		<link rel="stylesheet" href="../css/foundation-icons.css">
+	</head>
+	<body>
+		<nav class="top-bar">
+			<ul class="title-area">
+				<!-- Title Area -->
+				<li class="name">
+					<h1><a href="#">Top Bar Title </a></h1>
+				</li>
+				<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+			</ul>
+
+			<section class="top-bar-section">
+				<!-- Left Nav Section -->
+				<ul class="left">
+					<li class="divider"></li>
+					<li class="active"><a href="#">Main Item 1</a></li>
+					<li class="divider"></li>
+					<li><a href="#">Main Item 2</a></li>
+					<li class="divider"></li>
+					<li class="has-dropdown"><a href="#">Main Item 3</a>
+						<ul class="dropdown">
+							<li class="has-dropdown"><a href="#">Dropdown Level 1a</a>
+								<ul class="dropdown">
+									<li><label>Dropdown Level 2 Label</label></li>
+									<li><a href="#">Dropdown Level 2a</a></li>
+									<li><a href="#">Dropdown Level 2b</a></li>
+									<li class="has-dropdown"><a href="#">Dropdown Level 2c</a>
+										<ul class="dropdown">
+											<li><label>Dropdown Level 3 Label</label></li>
+											<li><a href="#">Dropdown Level 3a</a></li>
+											<li><a href="#">Dropdown Level 3b</a></li>
+											<li class="divider"></li>
+											<li><a href="#">Dropdown Level 3c</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Dropdown Level 2d</a></li>
+									<li><a href="#">Dropdown Level 2e</a></li>
+									<li><a href="#">Dropdown Level 2f</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Dropdown Level 1b</a></li>
+							<li><a href="#">Dropdown Level 1c</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Dropdown Level 1d</a></li>
+							<li><a href="#">Dropdown Level 1e</a></li>
+							<li><a href="#">Dropdown Level 1f</a></li>
+							<li class="divider"></li>
+							<li><a href="#">See all &rarr;</a></li>
+						</ul>
+					</li>
+					<li class="divider"></li>
+				</ul>
+
+				<!-- Right Nav Section -->
+				<ul class="right">
+					<li class="has-form">
+						<form>
+							<div class="row collapse">
+								<div class="small-4 columns">
+									<input type="text" name="txtuser" id="txtuser" placeholder="username" />
+								</div>
+								<div class="small-4 columns">
+									<input type="text" name="txtpass" id="txtpass" placeholder="password" />
+								</div>
+								<div class="small-4 columns">
+									<a href="#" class="button">Login</a>
+								</div>
+							</div>
+						</form>
+					</li>
+				</ul>
+			</section>
+		</nav>
+		<div class="row">
+			<div class="large-9 push-3 columns">
+				<div class="row">
+					<div id="am" class="large-6 columns">
+						<h3>Account Management</h3>
+						<p>Bacon ipsum dolor sit amet salami ham hock biltong ball tip drumstick sirloin pancetta meatball short loin.</p>
+						<a href="#" class="button">Add/Edit Users</a>
+						<a href="#" class="button">Add/Edit Permissions</a>
+						<a href="#" class="button">Default Button</a>
+					</div>
+					<div id="sa" class="large-6 columns">
+						<h3>Site Actions</h3>
+						<p>Tri-tip prosciutto meatball turkey, brisket spare ribs shankle chuck cow chicken ham hock boudin meatloaf jowl.</p>
+						<a href="#" class="button">Backup Site</a>
+						<a href="#" class="button">Load From Backup</a>
+						<a href="#" class="button">Post Global Alert</a>
+					</div>
+				</div>
+				<div class="row">
+					<div id="ri" class="large-6 columns">
+						<h3>Reporting Information</h3>
+						<p>Bacon ipsum dolor sit amet salami ham hock biltong ball tip drumstick sirloin pancetta meatball short loin.</p>
+						<a href="#" class="button">View Report List</a>
+						<a href="#" class="button">View Analytics</a>
+						<a href="#" class="button">View Usage Statitics</a>
+					</div>
+					<div class="large-6 columns">
+						<h3>Page Title <small>Page subtitle</small></h3>
+						<p>Tri-tip prosciutto meatball turkey, brisket spare ribs shankle chuck cow chicken ham hock boudin meatloaf jowl.</p>
+					</div>
+				</div>
+			</div>
+			<div class="large-3 pull-9 columns">
+				<ul class="side-nav">
+					<li><a href="#am">Acount Management</a></li>
+					<li><a href="#sa">Site Actions</a></li>
+					<li><a href="#ri">Reporting Information</a></li>
+				</ul>
+			</div>
+		</div>
+		<footer class="row">
+			<div class="large-12 columns">
+				<hr />
+				<div class="row">
+					<div class="large-6 columns">
+						<p>&copy; Copyright</p>
+					</div>
+					<div class="large-6 columns">
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="../js/foundation.min.js"></script>
+	</body>
+</html>
