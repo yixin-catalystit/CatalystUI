@@ -1,0 +1,236 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Foundation User Profile Template</title>
+<!-- Bootstrap CSS file-->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/foundation.css">
+    <link rel="stylesheet" href="../css/foundation-icons.css">
+    <link rel="stylesheet" href="../css/userprofile-foundation.css">
+</head>
+<body>
+  <div class="row"> 
+    <nav class="breadcrumbs">
+		  <a href="#">Home</a>
+		  <a href="#">User</a>
+		  <a class="current" href="#">Profile</a>
+		</nav>
+  </div>
+  <div class="row">
+    <hr/>
+  </div>
+  <div class="row">
+    <div class="large-3 columns">
+      <div class="usernav">
+        <img src="../img/default.png" height="100" width="100" />
+        <div style="margin-bottom: 10px; margin-top: 10px"><a href="#" data-reveal-id="myModal" onclick="filloutdata()">User Name</a></div>
+        <div style="margin-bottom: 10px;"">
+          <small>Developer, Application Development</small>
+        </div>
+        <div style="margin-bottom: 10px;">
+          <small>Catalyst IT Services</small>
+        </div>
+      </div>
+    </div>
+    <div class="large-6 columns">
+      <h3>
+        <strong>User Name's Profile</strong>
+      </h3> 
+		  <div class="section-container auto" data-section>
+			  <section class="active">
+			    <p class="title" data-section-title><a href="#panel1">Information</a></p>
+			    <div class="content" data-section-content>
+			      <p class="editbutton"><button type="button" style="float:right;" class="tiny button" onclick="editData()" >Edit</button></p>
+			      <h4><b>Information</b></h4>
+            <form>
+               <table>
+                 <tr>
+                   <td >Alias</td>
+                   <td id="alias">xx xxx</td>
+                 </tr>
+                 <tr>
+                   <td>E-mail</td>
+                   <td id="email">xxx@catalystitserices.com</td>
+                 </tr>
+                 <tr>
+                   <td>Office</td>
+                   <td id="office">Baltomore</td>
+                 </tr>
+                 <tr>
+                   <td>Phone</td>
+                   <td id="phone">410-385-2500</td>
+                 </tr>
+               </table>
+             </form>
+
+			    </div>
+			  </section>
+			  <section>
+			    <p class="title" data-section-title><a href="#panel2">Details</a></p>
+			    <div class="content" data-section-content>
+			      
+             <button type="button" style="float:right;" class="tiny button" >Edit</button>
+             <h4><b>Details</b></h4>
+             <table>
+               <tr>
+                 <td>First Name</td>
+                 <td id="firstname">xxx</td>
+               </tr>
+               <tr>
+                 <td>Last Name</td>
+                 <td id="lastname">xxx</td>
+               </tr>
+             </table>
+
+			    </div>
+			  </section>
+			  <section>
+			     <p class="title" data-section-title><a href="#panel2">Organization</a></p>
+           <div class="content" data-section-content>
+              <button type="button" style="float:right;" class="tiny button" >Edit</button>
+              <h4><b>Organization</b></h4>
+              <table>
+                <tr>
+                  <td>Job title</td>
+                  <td id="jobtitle">Developer</td>
+                </tr>
+                <tr>
+                  <td>Department</td>
+                  <td id="department">Application Development</td>
+                </tr>
+                <tr>
+                  <td>Company</td>
+                  <td id="company">Catalyst IT Services</td>
+                </tr>
+                <tr>
+                  <td>Management</td>
+                  <td id="management">xxx</td>
+                </tr>
+              </table>
+           </div>
+			  </section>
+        <section>
+           <p class="title" data-section-title><a href="#panel2">Address</a></p>
+           <div class="content" data-section-content>
+              <button type="button" style="float:right;" class="tiny button" >Edit</button>
+              <h4><b>Address</b></h4>
+              <table>
+                <tr>
+                  <td>Street</td>
+                  <td id="street">502 South Sharp Street</td>
+                </tr>
+                <tr>
+                  <td>City</td>
+                  <td id="city">Baltomroe</td>
+                </tr>
+                <tr>
+                  <td>State/Province</td>
+                  <td id="state">Maryland</td>
+                </tr>
+                <tr>
+                  <td>Postal code</td>
+                  <td id="postalcode">21201</td>
+                </tr>
+                <tr>
+                  <td>Country/Region</td>
+                  <td id="country">United States</td>
+                </tr>
+              </table>
+           </div>
+        </section>
+			</div>  
+    </div>
+    <div class="large-3 columns">
+      <div class="panel">
+        <div>&nbsp;&nbsp;&nbsp;Favorite Items</div>
+        <div style="FONT-FAMILY: 'Abyssinica SIL'; margin-top: 5px">&nbsp;&nbsp;&nbsp;<a href=#>Home</a></div>
+        <div style="margin-top: 5px;">&nbsp;&nbsp;&nbsp;<a href=#>&nbsp;&nbsp;&nbsp;User</a></div>
+        <div style="margin-top: 5px;">&nbsp;&nbsp;&nbsp;<a href=#>&nbsp;&nbsp;&nbsp;Gallery</a></div>
+      </div>
+    </div>
+  </div>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="../js/foundation.min.js"></script>
+  <script src="../js/userprofile.foundation.js"></script>
+  <script>$(document).foundation();</script>
+</body>
+
+<div id="myModal" class="reveal-modal">
+   <div class="row">
+   <div class="large-6 columns">
+      <table>
+         <tr><td><h4><b>Information</b></h4></td></tr>
+		     <tr>
+		       <td>Alias</td>
+		       <td id="aliaspopout">123</td>
+		     </tr>
+		     <tr>
+		       <td>Email</td>
+		       <td id="emailpopout"></td>
+		     </tr>
+		     <tr>
+		       <td>Office</td>
+		       <td id="officepopout"></td>
+		     </tr>
+		     <tr>
+		       <td>Phone</td>
+		       <td id="phonepopout"></td>
+		     </tr>
+		     <tr><td><h4><b>Details</b></h4></td></tr>
+         <tr>
+           <td>First Name</td>
+           <td id="firstnamepopout"></td>
+         </tr>
+         <tr>
+           <td>Last Name</td>
+           <td id="lastnamepopout"></td>
+         </tr>
+      </table>
+   </div>
+   <div class="large-6 columns">
+      <table>
+       <tr><td><h4><b>Organization</b></h4></td></tr>
+       <tr>
+         <td>Job title</td>
+         <td id="jobtitlepopout"></td>
+       </tr>
+       <tr>
+         <td>Department</td>
+         <td id="departmentpopout"></td>
+       </tr>
+       <tr>
+         <td>Company</td>
+         <td id="companypopout"></td>
+       </tr>
+       <tr>
+         <td>Management</td>
+         <td id="managementpopout"></td>
+       </tr>
+       <tr><td><h4><b>Address</b></h4></td></tr>
+       <tr>
+         <td>Street</td>
+         <td id="streetpopout"></td>
+       </tr>
+       <tr>
+         <td>City</td>
+         <td id="citypopout"></td>
+       </tr>
+       <tr>
+         <td>State/Province</td>
+         <td id="statepopout"></td>
+       </tr>
+       <tr>
+         <td>Postal code</td>
+         <td id="postalcodepopout"></td>
+       </tr>
+       <tr>
+         <td>Country/Region</td>
+         <td id="countrypopout"></td>
+       </tr>
+      </table>
+   </div >
+  </div>
+<a class="close-reveal-modal">&#215;</a>
+</div>
+
+</html>
